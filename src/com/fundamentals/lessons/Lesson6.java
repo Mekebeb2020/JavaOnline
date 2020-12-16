@@ -7,6 +7,7 @@ package com.fundamentals.lessons;
 public class Lesson6 {
 
     String myString = "Hello";
+    char myChar = myString.charAt(2);
 
     // Method shows String methods for charAt
     public void exampleCharAt() {
