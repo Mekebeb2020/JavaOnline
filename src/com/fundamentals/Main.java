@@ -1,6 +1,7 @@
 package com.fundamentals;
 
 import com.fundamentals.exercises.Lesson6Exercises;
+import com.fundamentals.exercises.Lesson7Exercises;
 import com.fundamentals.lessons.Lesson5;
 import com.fundamentals.lessons.Lesson6;
 import com.fundamentals.lessons.Lesson7;
@@ -17,8 +18,19 @@ public class Main {
         //Lesson5Examples();
         //lesson6Examples();
         //Lesson6Exercises();
-        lesson7Examples();
+        //lesson7Examples();
+        Lesson7Exercises();
     } // end main method
+
+    public static void Lesson7Exercises () {
+        Lesson7Exercises myLesson7Exercises = new Lesson7Exercises();
+        myLesson7Exercises.multiplyTwoNumbers();
+        myLesson7Exercises.doubleDataType();
+        myLesson7Exercises.mathProblem();
+
+    }
+
+
     public static void lesson7Examples (){
         Lesson7 myLesson7 = new Lesson7();
         myLesson7.basicMath();
