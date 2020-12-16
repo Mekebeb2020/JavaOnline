@@ -2,9 +2,9 @@ package com.fundamentals;
 
 import com.fundamentals.exercises.Lesson6Exercises;
 import com.fundamentals.exercises.Lesson7Exercises;
-import com.fundamentals.lessons.Lesson5;
-import com.fundamentals.lessons.Lesson6;
+
 import com.fundamentals.lessons.Lesson7;
+import com.fundamentals.lessons.Lesson8;
 
 /*
 * This Main class is the entry point to the application
@@ -15,12 +15,24 @@ public class Main {
     // This prints Hello Java
         // System.out.println("Hello Java");
         //House myHouse = new House();
-        //Lesson5Examples();
-        //lesson6Examples();
-        //Lesson6Exercises();
         //lesson7Examples();
-        Lesson7Exercises();
+       // Lesson7Exercises();
+        lesson8Example();
     } // end main method
+
+    public static void lesson8Example(){
+        Lesson8 myLesson8 = new Lesson8();
+        myLesson8.basicIfExample(5,5);
+        myLesson8.basicIfElseExample(12,17);
+        myLesson8.basicIfElseChainExample(42);
+        myLesson8.basicIfAndOrExample(108);
+        myLesson8.basicSwitchExample(2);
+        myLesson8.basicWhileExample();
+        myLesson8.basicDoWhileExample();
+        myLesson8.basicForLoopExample();
+        myLesson8.basicBranchExample();
+
+    }
 
     public static void Lesson7Exercises () {
         Lesson7Exercises myLesson7Exercises = new Lesson7Exercises();
@@ -29,7 +41,6 @@ public class Main {
         myLesson7Exercises.mathProblem();
 
     }
-
 
     public static void lesson7Examples (){
         Lesson7 myLesson7 = new Lesson7();
