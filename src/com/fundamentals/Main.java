@@ -3,6 +3,7 @@ package com.fundamentals;
 import com.fundamentals.exercises.Lesson6Exercises;
 import com.fundamentals.exercises.Lesson7Exercises;
 
+import com.fundamentals.exercises.Lesson8Exercises;
 import com.fundamentals.lessons.Lesson7;
 import com.fundamentals.lessons.Lesson8;
 
@@ -17,8 +18,18 @@ public class Main {
         //House myHouse = new House();
         //lesson7Examples();
        // Lesson7Exercises();
-        lesson8Example();
+        //lesson8Example();
+        Lesson8Exercises();
     } // end main method
+
+    public static void Lesson8Exercises(){
+        Lesson8Exercises myLesson8Exercises = new Lesson8Exercises();
+        myLesson8Exercises.exercises8IfElse(15,20);
+        myLesson8Exercises.exercises8Switch();
+        myLesson8Exercises.exercises8DoWhile();
+
+
+    }
 
     public static void lesson8Example(){
         Lesson8 myLesson8 = new Lesson8();
