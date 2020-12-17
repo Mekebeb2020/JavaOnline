@@ -6,6 +6,7 @@ import com.fundamentals.exercises.Lesson7Exercises;
 import com.fundamentals.exercises.Lesson8Exercises;
 import com.fundamentals.lessons.Lesson7;
 import com.fundamentals.lessons.Lesson8;
+import com.fundamentals.lessons.Lesson9;
 
 /*
 * This Main class is the entry point to the application
@@ -19,8 +20,18 @@ public class Main {
         //lesson7Examples();
        // Lesson7Exercises();
         //lesson8Example();
-        Lesson8Exercises();
+        //Lesson8Exercises();
+        Lesson9Examples();
     } // end main method
+
+    public static void Lesson9Examples(){
+        Lesson9 myLesson9 = new Lesson9();
+        myLesson9.basicIntArray();
+        myLesson9.basicTwoDimensionalArray();
+        myLesson9.basicThreeDimensionalArray();
+        myLesson9.basicJaggedArray();
+    }
+
 
     public static void Lesson8Exercises(){
         Lesson8Exercises myLesson8Exercises = new Lesson8Exercises();
