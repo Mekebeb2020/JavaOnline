@@ -5,9 +5,7 @@ import com.fundamentals.exercises.Lesson7Exercises;
 
 import com.fundamentals.exercises.Lesson8Exercises;
 import com.fundamentals.exercises.Lesson9Exercises;
-import com.fundamentals.lessons.Lesson7;
-import com.fundamentals.lessons.Lesson8;
-import com.fundamentals.lessons.Lesson9;
+import com.fundamentals.lessons.*;
 
 import java.security.PublicKey;
 
@@ -21,13 +19,23 @@ public class Main {
         // System.out.println("Hello Java");
         //House myHouse = new House();
         //lesson7Examples();
-       // Lesson7Exercises();
+        // Lesson7Exercises();
         //lesson8Example();
         //Lesson8Exercises();
-       // Lesson9Examples();
-        Lesson9Exercises();
-
+        // Lesson9Examples();
+        //Lesson9Exercises();
+        lesson10Examples();
     } // end main method
+
+    public static void lesson10Examples(){
+        Lesson10 myLesson10 = new Lesson10();
+        //myLesson10.myMethod(); // method is private and we can not see it
+        Lesson10Extended myExtended = new Lesson10Extended();
+        //myLesson10.myDefaultMethod(); // method is default and outside this package
+        myExtended.methodFromOtherClass();
+        //myLesson10.myProtectedMethod(); // method is protected and is not subclassed and outside this package
+
+    }
 
     public static void Lesson9Exercises(){
        Lesson9Exercises myLesson9Exercise = new Lesson9Exercises();
