@@ -4,9 +4,12 @@ import com.fundamentals.exercises.Lesson6Exercises;
 import com.fundamentals.exercises.Lesson7Exercises;
 
 import com.fundamentals.exercises.Lesson8Exercises;
+import com.fundamentals.exercises.Lesson9Exercises;
 import com.fundamentals.lessons.Lesson7;
 import com.fundamentals.lessons.Lesson8;
 import com.fundamentals.lessons.Lesson9;
+
+import java.security.PublicKey;
 
 /*
 * This Main class is the entry point to the application
@@ -21,9 +24,19 @@ public class Main {
        // Lesson7Exercises();
         //lesson8Example();
         //Lesson8Exercises();
-        Lesson9Examples();
+       // Lesson9Examples();
+        Lesson9Exercises();
+
     } // end main method
 
+    public static void Lesson9Exercises(){
+       Lesson9Exercises myLesson9Exercise = new Lesson9Exercises();
+       myLesson9Exercise.iceCreamFlavors();
+       myLesson9Exercise.chiefsArray();
+    }
+
+
+    // Lesson8
     public static void Lesson9Examples(){
         Lesson9 myLesson9 = new Lesson9();
         myLesson9.basicIntArray();
