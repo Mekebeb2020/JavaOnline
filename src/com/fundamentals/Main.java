@@ -24,8 +24,17 @@ public class Main {
         //Lesson8Exercises();
         // Lesson9Examples();
         //Lesson9Exercises();
-        lesson10Examples();
+        //lesson10Examples();
+        lesson11Examples();
     } // end main method
+
+    public static void lesson11Examples() {
+        House myHouse = new House();
+        House myOtherHouse = new House("Red");
+
+    }
+
+
 
     public static void lesson10Examples(){
         Lesson10 myLesson10 = new Lesson10();
