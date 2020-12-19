@@ -1,10 +1,7 @@
 package com.fundamentals;
 
-import com.fundamentals.exercises.Lesson6Exercises;
-import com.fundamentals.exercises.Lesson7Exercises;
+import com.fundamentals.exercises.*;
 
-import com.fundamentals.exercises.Lesson8Exercises;
-import com.fundamentals.exercises.Lesson9Exercises;
 import com.fundamentals.lessons.*;
 
 import java.security.PublicKey;
@@ -25,8 +22,16 @@ public class Main {
         // Lesson9Examples();
         //Lesson9Exercises();
         //lesson10Examples();
-        lesson11Examples();
+        //lesson11Examples();
+        lesson11Exercises();
     } // end main method
+
+    public static void lesson11Exercises(){
+        Television myTelevision = new Television();
+          myTelevision.turnOn();
+
+
+    }
 
     public static void lesson11Examples() {
         House myHouse = new House();

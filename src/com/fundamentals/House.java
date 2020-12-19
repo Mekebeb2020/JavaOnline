@@ -9,7 +9,7 @@ public class House {
 
     public House(){
         this("white");
-        System.out.println("The is the default constructor");
+        System.out.println("This is the default constructor");
     }
 
     public House(String doorColor){
