@@ -40,14 +40,20 @@ public class House {
         return roofType;
     }
 
-    public void doorOpenClose() {}
+    public void doorOpenClose() {
+        System.out.println("My house door is closed");
+    }
 
-    public String getDoorCover() {
+    public void doorOpenClose(String DoorColor){
+        System.out.println("the open door is "+doorColor);
+    }
+
+    public String getDoorColor() {
         return doorColor;
     }
 
-    public void setDoorCover(String doorCover) {
-        this.doorColor = doorCover;
+    public void setDoorColor(String doorColor) {
+        this.doorColor = doorColor;
     }
 
     public int getWindowSize() {

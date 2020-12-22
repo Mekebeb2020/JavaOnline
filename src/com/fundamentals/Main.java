@@ -23,8 +23,22 @@ public class Main {
         //Lesson9Exercises();
         //lesson10Examples();
         //lesson11Examples();
-        lesson11Exercises();
+        //lesson11Exercises();
+       // Dog myDog = new Dog();
+        lesson13Example();
     } // end main method
+
+public static void lesson13Example(){
+        House myHouse = new House("blue");
+        Condo myCondo = new Condo("medium");
+        myHouse.doorOpenClose(myHouse.getDoorColor());
+        myCondo.doorOpenClose(myCondo.getDoorColor());
+
+        House myNewHouse = new Condo();
+        myNewHouse.doorOpenClose();
+
+}
+
 
     public static void lesson11Exercises(){
         Television myTelevision = new Television();
