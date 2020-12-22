@@ -11,6 +11,17 @@ import java.security.PublicKey;
 * */
 public class Main {
 
+    public static int num = 0;
+    static {
+        System.out.println("Static block 1");
+        num = 42;
+    }// end static block
+
+    static {
+        System.out.println("Static block 2");
+        num = 52;
+    }
+
     public static void main(String[] args) {
     // This prints Hello Java
         // System.out.println("Hello Java");
@@ -25,9 +36,31 @@ public class Main {
         //lesson11Examples();
         //lesson11Exercises();
         //lesson13Example();
-        pup();
-        dog();
+        //pup();
+        //dog();
+        lesson14Example();
     } // end main method
+
+public static void lesson14Example(){
+        // can not change values of final
+        //Lesson14.MY_FIRST_FINAL = 10;
+
+        int total = Lesson14.MY_FIRST_FINAL * 35; // 2145 * 35
+        System.out.println(total);
+
+        // can change the value of a non-final static
+        Lesson14.myFirstStatic = 98;  // original was 25
+        System.out.println(Lesson14.myFirstStatic);
+
+        Lesson14.myFirstStaticMethod(10);
+        System.out.println("block number was " +num);
+
+
+    }
+
+
+
+
     public static void dog(){
         Dog myDog = new Dog();
     }
