@@ -7,20 +7,35 @@ public class Dog {
     private String faithful;
     private String canSmellCancer;
     private String goodGuard;
+    private String DogColor;
 
     public Dog(){
         System.out.println("This is the default constructor");
     }
 
-    public Dog(String eatMeat,String bark, String faithful, String canSmellCancer, String goodGuard){
+    public Dog(String eatMeat,String bark, String faithful, String canSmellCancer, String goodGuard, String dogColor){
         this.eatMeat = eatMeat;
         this.bark = bark;
         this.faithful = faithful;
-        this.getCanSmellCancer();
-        this.getGoodGuard();
-
+        this.canSmellCancer = canSmellCancer;
+        this.goodGuard = goodGuard;
+        this.DogColor = dogColor;
 
     }
+
+    public Dog(String eatMeat, String bark, String faithful, String canSmellCancer, String goodGuard) {
+
+    }
+
+
+    public void dogColor() {
+        System.out.println("My dog color is black");
+    }
+
+    public void dogColor(String dogColor){
+        System.out.println("my dog color is "+dogColor);
+    }
+
 
     public void setEatMeat(String eatMeat) {
         this.eatMeat = eatMeat;
@@ -56,6 +71,14 @@ public class Dog {
 
     public String getGoodGuard() {
         return goodGuard;
+    }
+
+    public String getDogColor(){
+        return DogColor;
+    }
+
+    public void setDogColor(String DogColor){
+        this.DogColor = DogColor;
     }
 
     public void setGoodGuard(String goodGuard) {

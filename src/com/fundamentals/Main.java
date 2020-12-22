@@ -24,9 +24,21 @@ public class Main {
         //lesson10Examples();
         //lesson11Examples();
         //lesson11Exercises();
-       // Dog myDog = new Dog();
-        lesson13Example();
+        //lesson13Example();
+        pup();
+        dog();
     } // end main method
+    public static void dog(){
+        Dog myDog = new Dog();
+    }
+
+    public static void pup(){
+      Dog myDog = new Dog();
+      Pup myPup = new Pup();
+      myDog.dogColor(myDog.getDogColor());
+      myPup.pupColor(myPup.getPupColor());
+    }
+
 
 public static void lesson13Example(){
         House myHouse = new House("blue");
