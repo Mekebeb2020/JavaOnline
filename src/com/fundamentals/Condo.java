@@ -12,7 +12,7 @@ public class Condo extends House{
      }
         public Condo(String balcony) {
          this(balcony,"red",25,"concrete","shingles");
-         //this.balcony = balcony;
+         this.balcony = balcony;
     }
 
     public Condo(String balcony, String doorColor, int windowSize, String foundation, String roofType){
