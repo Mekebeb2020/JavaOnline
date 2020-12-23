@@ -11,16 +11,12 @@ import java.security.PublicKey;
 * */
 public class Main {
 
-    public static int num = 0;
+    public static int current = 0;
     static {
         System.out.println("Static block 1");
-        num = 42;
+            current = 42;
     }// end static block
 
-    static {
-        System.out.println("Static block 2");
-        num = 52;
-    }
 
     public static void main(String[] args) {
     // This prints Hello Java
@@ -38,25 +34,52 @@ public class Main {
         //lesson13Example();
         //pup();
         //dog();
-        lesson14Example();
+        //lesson14Example();
+        //lesson14Exercises();
+        lesson15Examples();
     } // end main method
 
-public static void lesson14Example(){
+    public static void lesson15Examples(){
+        int[] myInt = {1,2,3,4};
+        Lesson15Base myBase = new Lesson15Sub(10,myInt,"turned off");
+        Lesson15Sub mySub = new Lesson15Sub(10,myInt,"turned off");
+        mySub.receiveCall();
+        mySub.takePicture();
+    }
+
+
+
+    public static void lesson14Exercises(){
+        Lesson14Exercises myLesson14Exercises = new Lesson14Exercises();
+        int resistance = 200;
+        int voltage = current * resistance;
+        System.out.println(voltage);
+
+        int current = voltage / resistance;
+        System.out.println(current);
+
+        int MyNewResistance = voltage / current;
+        System.out.println(MyNewResistance);
+
+    }
+
+
+
+//public static void lesson14Example(){
         // can not change values of final
         //Lesson14.MY_FIRST_FINAL = 10;
 
-        int total = Lesson14.MY_FIRST_FINAL * 35; // 2145 * 35
-        System.out.println(total);
+       // int total = Lesson14.MY_FIRST_FINAL * 35; // 2145 * 35
+       // System.out.println(total);
 
         // can change the value of a non-final static
-        Lesson14.myFirstStatic = 98;  // original was 25
-        System.out.println(Lesson14.myFirstStatic);
+      //  Lesson14.myFirstStatic = 98;  // original was 25
+        //System.out.println(Lesson14.myFirstStatic);
 
-        Lesson14.myFirstStaticMethod(10);
-        System.out.println("block number was " +num);
+       // Lesson14.myFirstStaticMethod(10);
+       // System.out.println("block number was " +num);
 
 
-    }
 
 
 
