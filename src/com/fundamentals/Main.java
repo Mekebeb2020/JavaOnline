@@ -36,8 +36,25 @@ public class Main {
         //dog();
         //lesson14Example();
         //lesson14Exercises();
-        lesson15Examples();
+        //lesson15Examples();
+        lessonExercises15Waterbirds();
     } // end main method
+
+
+
+    public static void lessonExercises15Waterbirds(){
+
+        Exercises15WaterBirds myWaterBirds = new Exercises15WaterBirdsChicks("gliding and flapping",
+                "Likes to Swim", "These are birds found in or very near water in aquatic");
+
+        Exercises15WaterBirdsChicks myChicks = new Exercises15WaterBirdsChicks("Likes to Swim",
+                "These are birds found in or very near water in aquatic",
+                "the movements of the birds are gliding and flapping");
+        myChicks.movementsOfBirds();
+        myChicks.swimming();
+        myChicks.wetLandHabitats();
+    }
+
 
     public static void lesson15Examples(){
         int[] myInt = {1,2,3,4};
