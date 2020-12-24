@@ -37,8 +37,33 @@ public class Main {
         //lesson14Example();
         //lesson14Exercises();
         //lesson15Examples();
-        lessonExercises15Waterbirds();
+        //lessonExercises15Waterbirds();
+
+        lesson16Examples();
     } // end main method
+
+
+    public static void lesson16Examples(){
+        Lesson16 myLesson16 = new Lesson16();
+        myLesson16.showEnum();
+        myLesson16.myFavoriteFlavor(Lesson16.IceCreamFlavors.ROCK_ROAD);
+
+        DaysOfTheWeek d1[] = DaysOfTheWeek.values();
+        for(DaysOfTheWeek day: d1) {
+            System.out.println((day +"at index "+day.ordinal()));
+        }
+
+
+        DaysOfTheWeek d3 = DaysOfTheWeek.WED;
+        d3.enumMethod();
+
+        Lesson16Lab[] labs = Lesson16Lab.values();
+
+        for (Lesson16Lab lab : labs) {
+            System.out.println("Labrador Color: "+lab.name() + "registration code: "+lab.getAction());
+        }
+
+    }
 
 
 
