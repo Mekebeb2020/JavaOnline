@@ -42,8 +42,21 @@ public class Main {
         //lessonExercises15Waterbirds();
         //lesson16Examples();
 
-        Lesson16Exercises();
+        //Lesson16Exercises();
+        lesson17Examples();
+
     } // end main method
+
+    public static void lesson17Examples() {
+        Lesson17 myLesson17 = new Lesson17();
+        //myLesson17.exampleArrayList1();
+        //myLesson17.exampleArrayList2();
+        //myLesson17.exampleHashSet();
+        myLesson17.exampleHashMap();
+
+
+    }
+
 
     public static void Lesson16Exercises() {
         System.out.println(Lesson16Exercises.MovieGenres.ACTION);
