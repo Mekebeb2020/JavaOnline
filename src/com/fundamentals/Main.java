@@ -12,6 +12,8 @@ import java.security.PublicKey;
 public class Main {
 
     public static int current = 0;
+    private static Lesson16Exercises[] MovieGenres;
+
     static {
         System.out.println("Static block 1");
             current = 42;
@@ -38,10 +40,19 @@ public class Main {
         //lesson14Exercises();
         //lesson15Examples();
         //lessonExercises15Waterbirds();
+        //lesson16Examples();
 
-        lesson16Examples();
+        Lesson16Exercises();
     } // end main method
 
+    public static void Lesson16Exercises() {
+        System.out.println(Lesson16Exercises.MovieGenres.ACTION);
+        Lesson16Exercises myLesson16Exercises = new Lesson16Exercises();
+        myLesson16Exercises.MyBestMovie(Lesson16Exercises.MovieGenres.COMEDY);
+        myLesson16Exercises.MyBestMovie(Lesson16Exercises.MovieGenres.ROMANCE);
+
+
+    }
 
     public static void lesson16Examples(){
         Lesson16 myLesson16 = new Lesson16();
