@@ -41,11 +41,20 @@ public class Main {
         //lesson15Examples();
         //lessonExercises15Waterbirds();
         //lesson16Examples();
-
         //Lesson16Exercises();
         //lesson17Examples();
-    lesson17Exercises();
+        // lesson17Exercises();
+        lesson18Examples();
     } // end main method
+
+    public static void lesson18Examples(){
+       Lesson18 myLesson18 = new Lesson18();
+       //myLesson18.exampleException();
+        myLesson18.myArrayException();
+    }
+
+
+
 
     public static void lesson17Exercises(){
         Lesson17Exercises myLesson17Exercise = new Lesson17Exercises();
