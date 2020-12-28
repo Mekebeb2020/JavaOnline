@@ -43,9 +43,16 @@ public class Main {
         //lesson16Examples();
 
         //Lesson16Exercises();
-        lesson17Examples();
-
+        //lesson17Examples();
+    lesson17Exercises();
     } // end main method
+
+    public static void lesson17Exercises(){
+        Lesson17Exercises myLesson17Exercise = new Lesson17Exercises();
+        myLesson17Exercise.Exercises17ArrayList();
+        myLesson17Exercise.Exercise17HashMap();
+        myLesson17Exercise.exercises17HashSet();
+    }
 
     public static void lesson17Examples() {
         Lesson17 myLesson17 = new Lesson17();
