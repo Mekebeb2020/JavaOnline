@@ -44,8 +44,16 @@ public class Main {
         //Lesson16Exercises();
         //lesson17Examples();
         // lesson17Exercises();
-        lesson18Examples();
+        //lesson18Examples();
+        lesson18Exercises();
     } // end main method
+
+
+    public static void lesson18Exercises() {
+        Lesson18Exercises myLesson18Exercises = new Lesson18Exercises();
+        myLesson18Exercises.exercises18Exception();
+
+    }
 
     public static void lesson18Examples(){
        Lesson18 myLesson18 = new Lesson18();
